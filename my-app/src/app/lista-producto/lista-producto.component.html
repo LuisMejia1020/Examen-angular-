@@ -1,0 +1,19 @@
+<p>lista-producto works!</p>
+<h3>Agregar producto</h3>
+<div>
+    <label for="imagen-producto">Imagen</label>
+    <input id="nombre" [(ngModel)]="productoNuevo.imagen" placeholder="ESTE PRODUCTO NUEVO ES...">
+</div>
+<div>
+    <label for="nombre">Nombre</label>
+    <input id="nombre" [(ngModel)]="productoNuevo.nombre" placeholder="ESTE PRODUCTO NUEVO ES...">
+</div>
+<div>
+    <label for="nombre">precio</label>
+    <input id="nombre" [(ngModel)]="productoNuevo.precio" placeholder="ESTE PRODUCTO NUEVO ES...">
+</div>
+
+<button (click)="agregarProducto()">agregar producto</button>
+
+
+<app-producto *ngFor="let producto of productos" [productos]="producto"></app-producto>

@@ -1,0 +1,38 @@
+<p>cliente works!</p>
+<h3>Agregar Cliente</h3>
+<div>
+    <label for="nombre">Nombre</label>
+    <input id="nombre" [(ngModel)]="clienteNuevo.nombre" placeholder="El nombre del cliente es">
+</div>
+<div>
+    <label for="correo">Correo</label>
+    <input id="correo" [(ngModel)]="clienteNuevo.correo" placeholder="Su correo por favor">
+</div>
+<div>
+    <label for="telefono">Telefono</label>
+    <input id="telefono" [(ngModel)]="clienteNuevo.telefono" placeholder="Su numero de telefono ">
+</div>
+<div>
+    <label for="direccion">Direccion </label>
+    <input id="direccio " [(ngModel)]="clienteNuevo.direccion" placeholder="Su direccion es">
+</div>
+
+<button (click)="agregarCliente()">agregar cliente</button>
+
+
+<h2>{{clientes[0].nombre}}</h2>
+<p>{{clientes[0].direccion}}</p>
+<p>{{clientes[0].telefono}}</p>
+<p>{{clientes[0].direccion}}</p>
+
+<h2>{{clientes[1].nombre}}</h2>
+<p>{{clientes[1].direccion}}</p>
+<p>{{clientes[1].telefono}}</p>
+<p>{{clientes[1].direccion}}</p>
+
+<h2>{{clientes[2].nombre}}</h2>
+<p>{{clientes[2].direccion}}</p>
+<p>{{clientes[2].telefono}}</p>
+<p>{{clientes[2].direccion}}</p>
+
+
