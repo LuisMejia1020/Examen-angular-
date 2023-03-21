@@ -48,7 +48,6 @@ export class ListaProductoComponent implements OnInit{
 
   agregarProducto(){
     this.productos.push(this.productoNuevo)
-
     this.productoNuevo = {
       id: 0,
     nombre: '',
